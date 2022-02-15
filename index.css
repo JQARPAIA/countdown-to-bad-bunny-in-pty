@@ -72,18 +72,22 @@ li span {
 #bad_bunny_logo {
   position: relative;
   filter: drop-shadow(30px 25px 15px #000);
-  animation: floating 2s ease 0s infinite forwards;
+  margin: 50px 0;
+  animation: floating 8s infinite linear;
 }
 
 @keyframes floating {
   0% {
-    top: -8px;
+    transform: rotate(0deg);
+    filter: drop-shadow(30px 25px 15px #000);
   }
   50% {
-    top: 5px;
+    transform: rotate(180deg);
+    filter: drop-shadow(-30px 25px 15px #000);
   }
   100% {
-    top: -8px;
+    transform: rotate(360deg);
+    filter: drop-shadow(30px 25px 15px #000);
   }
 }
 
