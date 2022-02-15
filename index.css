@@ -77,6 +77,18 @@ li span {
   animation: floating 8s infinite linear;
 }
 
+.my_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.my_link a {
+  text-decoration: none;
+}
+
 @keyframes floating {
   0% {
     transform: rotate(0deg);
