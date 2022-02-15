@@ -73,6 +73,7 @@ li span {
   position: relative;
   filter: drop-shadow(30px 25px 15px #000);
   margin: 50px 0;
+  width: 300px;
   animation: floating 8s infinite linear;
 }
 
@@ -102,5 +103,8 @@ li span {
   
   li span {
     font-size: calc(3.375rem * var(--smaller));
+  }
+  #bad_bunny_logo {
+    width: 250px;
   }
 }
