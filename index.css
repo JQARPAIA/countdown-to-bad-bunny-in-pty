@@ -38,6 +38,7 @@ body {
 #headline {
   padding: 0 50px;
   margin-bottom: 50px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 
 h1 {
@@ -71,7 +72,7 @@ li span {
 
 #bad_bunny_logo {
   position: relative;
-  filter: drop-shadow(30px 25px 15px #000);
+  filter: drop-shadow(20px 5px 2px #000);
   margin: 50px 0;
   width: 300px;
   animation: floating 8s infinite linear;
@@ -92,15 +93,15 @@ li span {
 @keyframes floating {
   0% {
     transform: rotate(0deg);
-    filter: drop-shadow(30px 25px 15px #000);
+    /* filter: drop-shadow(30px 25px 15px #000); */
   }
   50% {
     transform: rotate(180deg);
-    filter: drop-shadow(-30px 25px 15px #000);
+    /* filter: drop-shadow(-30px 25px 15px #000); */
   }
   100% {
     transform: rotate(360deg);
-    filter: drop-shadow(30px 25px 15px #000);
+    /* filter: drop-shadow(30px 25px 15px #000);   */
   }
 }
 
