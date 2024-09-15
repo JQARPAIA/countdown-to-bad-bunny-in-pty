@@ -14,22 +14,17 @@
 
   const countDown = new Date(badBunnyDay).getTime(),
     x = setInterval(function () {
-
       const now = new Date().getTime(),
-      distance = countDown - now;
+        distance = countDown - now;
 
-      document.getElementById("days").innerText = Math.floor(distance / (day)),
-      document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      const days = Math.floor(distance / day) * -1;
+      const hours = Math.floor((distance % day) / hour) * -1;
+      const minutes = Math.floor((distance % hour) / minute) * -1;
+      const seconds = Math.floor((distance % minute) / second) * -1;
 
-      //do something later when date is reached
-      if (distance < 0) {
-        document.getElementById("headline").innerText = "It's San Benito Day!!!!";
-        document.getElementById("countdown").style.display = "none";
-        document.getElementById("content").style.display = "block";
-        clearInterval(x);
-      }
-      //seconds
-    }, 500)
-}());
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }, 500);
+})();
